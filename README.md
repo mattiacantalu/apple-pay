@@ -175,18 +175,18 @@ struct FakeData {
         return Currency(country: "IT",
                         id: "EUR")
     }
-    
+
     static func shippingInfo() -> Contact {
-        let contact = Contact(email: "mattia.cantalu@ynap.com",
-                              name: "Mattia Cantalu",
-                              cap: "40069",
-                              street: "via nerio nannetti 1",
-                              country: "Italia",
-                              countryCode: "IT",
-                              city: "Zola Predosa",
-                              state: "Italia",
-                              phone: "+3939339393",
-                              requiredFields: [.postalAddress])
+        let contact = Contact(email: "<sample@email.com>",
+                              name: "<name surname>",
+                              cap: "<postal code>",
+                              street: "<street name>",
+                              country: "<country name>",
+                              countryCode: "<contry code>",
+                              city: "<city name>",
+                              state: "<state>",
+                              phone: "<0123456789>",
+                              requiredFields: [.postalAddress, .emailAddress, .name])
         return contact
     }
     
